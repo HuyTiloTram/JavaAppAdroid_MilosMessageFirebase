@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="3dp">
+<RelativeLayout
+    android:id="@+id/relativeFile"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    >
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imgFileSender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxHeight="355dp"
+        android:maxWidth="280dp"
+        android:layout_marginRight="15dp"
+        android:adjustViewBounds="true"
+        android:layout_alignParentRight="true"
+        app:shapeAppearanceOverlay="@style/img_imgmess_chatdetail"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constrainlayoutMess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_below="@+id/relativeFile"
+        android:background="@drawable/bg_sender"
+        android:maxWidth="310dp"
+        android:maxHeight="400dp"
+        android:minHeight="10dp">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="16dp" />
+
+        <TextView
+            android:id="@+id/textview_sender_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="3dp"
+            android:inputType="textLongMessage|textMultiLine"
+            android:maxWidth="270dp"
+            android:minWidth="50dp"
+            app:layout_constraintBottom_toTopOf="@+id/textview_sender_time"
+            app:layout_constraintEnd_toStartOf="@+id/guideline5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/textview_sender_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="4dp"
+            android:text="12:00pm"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:id="@+id/linearlayout_feeling"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-6dp"
+        android:background="@color/white"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_below="@id/constrainlayoutMess"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgFeelingLike"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="3dp"
+            android:visibility="gone"
+            app:srcCompat="@drawable/ic_fb_like" />
+        <ImageView
+            android:id="@+id/imgFeelingLove"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="3dp"
+            android:visibility="gone"
+            app:srcCompat="@drawable/ic_fb_love" />
+        <ImageView
+            android:id="@+id/imgFeelingLaugh"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="3dp"
+            android:visibility="gone"
+            app:srcCompat="@drawable/ic_fb_laugh" />
+        <ImageView
+            android:id="@+id/imgFeelingWow"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="3dp"
+            android:visibility="gone"
+            app:srcCompat="@drawable/ic_fb_wow" />
+        <ImageView
+            android:id="@+id/imgFeelingSad"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="3dp"
+            android:visibility="gone"
+            app:srcCompat="@drawable/ic_fb_sad" />
+        <ImageView
+            android:id="@+id/imgFeelingAngry"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="3dp"
+            android:visibility="gone"
+            app:srcCompat="@drawable/ic_fb_angry" />
+        <TextView
+            android:id="@+id/txtTotalFeeling"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_weight="1"
+            android:text="1" />
+
+
+    </LinearLayout>
+</RelativeLayout>

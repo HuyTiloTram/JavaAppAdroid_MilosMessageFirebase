@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">MiLos</string>
+    <string name="button1">TODO</string>
+    <string name="button2">TODO</string>
+    <string name="todo">TODO</string>
+    <string name="phonenumber">Sử dụng số di động của bạn giúp bạn đặt lại mật khẩu.\nTìm bạn bè, cập nhập qua SMS và nhiều thông tin khác.</string>
+    <string name="test">ggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg</string>
+    <string name="signup_term_of_service">Tiếp tục nghĩa là bạn đồng ý với các <b><font color='#1790F1'>điều khoản sử dụng Milos</font></b></string>
+    <string name="signup_tutorial_phone">Nhập số điện thoại của bạn để tạo tài khoản mới </string>
+    <string name="signup_tutorial_otp">Vui lòng không chia sẻ mã xác thực để tránh mất tài khoản </string>
+    <string name="signup_tutorial_password">Vui lòng nhập mật khẩu mạnh cho tài khoản chứa CHỮ HOA, chữ thường, số và ký tự đặt biệt để bảo vệ tài khoản </string>
+    <string name="frequently_question">Câu hỏi thường gặp ></string>
+    <string name="forget_password"><b><font color='#1790F1'>Lấy lại mật khẩu</font></b> </string>
+    <string name="signin_tutorial_phone_password">Vui lòng nập số điện thoại và mật khẩu để đăng nhập</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

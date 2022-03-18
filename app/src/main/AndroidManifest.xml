@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.l19cntt1b.milos">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Milos"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".FindFriendsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Signup4Activity"
+            android:exported="false"></activity>
+        <activity
+            android:name=".ChatDetailActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Milos.Chatdetail"
+            android:windowSoftInputMode="adjustResize"></activity>
+        <activity
+            android:name=".ChangeYourInforActivity"
+            android:exported="false" />
+        <activity
+            android:name=".YourInformationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SettingPrivateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".YourProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SlashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LetChooseActivity"
+            android:exported="true" />
+        <activity android:name=".Signin1Activity" />
+        <activity android:name=".Signup1Activity" />
+        <activity android:name=".Signup2Activity" />
+        <activity android:name=".Signup3Activity" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="true"
+            android:fitsSystemWindows="true" />
+    </application>
+
+</manifest>

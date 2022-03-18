@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/tao_mat_khau"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            style="@style/CardView.Dark"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Tạo mật khẩu"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tao_mat_khau"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/LightGrey"
+            android:padding="10dp"
+            android:text="Vui lòng nhập mật khẩu mạnh cho tài khoản.\nChứa CHỮ HOA, chữ thường, số và ký tự đặt biệt để bảo vệ tài khoản."
+            android:textColor="@color/Black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edittext_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView4"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:ems="10"
+            android:hint="Mật khẩu"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            app:layout_constraintHorizontal_bias="0.551" />
+
+        <EditText
+            android:id="@+id/edittext_confirm_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edittext_password"
+            android:layout_margin="20dp"
+            android:ems="10"
+            android:hint="Nhập lại Mật khẩu"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            app:layout_constraintHorizontal_bias="0.551"
+            app:layout_constraintTop_toBottomOf="@+id/edittext_password" />
+
+
+        <Button
+            android:id="@+id/btnTiepTuc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edittext_confirm_password"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/button_signin"
+            android:text="Tiếp tục"
+            android:textColor="@color/WhiteSmoke"
+            app:layout_constraintHorizontal_bias="0.497" />
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edittext_confirm_password"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/button_signin"
+            android:text="Trở về"
+            android:textColor="@color/WhiteSmoke"
+            app:layout_constraintHorizontal_bias="0.497" />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

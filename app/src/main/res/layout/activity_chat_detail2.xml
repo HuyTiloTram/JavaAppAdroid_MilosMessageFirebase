@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatDetailActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/DodgerBlue"
+
+
+        >
+
+        <ImageView
+            android:id="@+id/imageview_back_arrow"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginRight="5dp"
+            android:padding="10dp"
+            app:srcCompat="@drawable/left_arrow_1"
+            app:tint="@color/White" />
+
+        <TextView
+            android:id="@+id/textview_username"
+            style="@style/CardView.Dark"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@+id/imageview_back_arrow"
+            android:text="UserName"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/imageview_back_arrow"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textview_last_online"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textview_username"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@+id/imageview_back_arrow"
+            android:text="LasttimeOnline"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            app:srcCompat="@drawable/option_1"
+            app:tint="@color/White" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:layout_toLeftOf="@+id/imageView10"
+            android:padding="5dp"
+            app:srcCompat="@drawable/icn_contact_callvideo"
+            app:tint="@color/White" />
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toLeftOf="@id/imageView8"
+            android:padding="5dp"
+            app:srcCompat="@drawable/icn_contact_callvoice"
+            app:tint="@color/White" />
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_chat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeTop"
+        android:layout_above="@+id/relativeBot"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/FloralWhite" />
+
+    <RelativeLayout
+        android:id="@+id/relativeBot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        >
+
+        <ImageView
+            android:id="@+id/imageview_send_emoji"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="5dp"
+            android:src="@drawable/send_emoji"
+            app:tint="@color/LightCoral" />
+
+        <EditText
+            android:id="@+id/edittext_message"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:layout_toRightOf="@+id/imageview_send_emoji"
+            android:ems="10"
+            android:hint="Tin nhắn"
+            android:inputType="textPersonName" />
+
+        <ImageView
+            android:id="@+id/imageview_send_pictures"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="5dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/send_photo"
+            app:tint="@color/LightCoral"
+            />
+
+        <ImageView
+            android:id="@+id/imageview_send_mic"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_toLeftOf="@+id/imageview_send_pictures"
+            android:padding="10dp"
+            android:src="@drawable/send_record_mic"
+            app:tint="@color/LightCoral" />
+
+        <ImageView
+            android:id="@+id/imageview_send_other"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_toLeftOf="@+id/imageview_send_mic"
+            android:padding="5dp"
+            android:src="@drawable/send_other"
+            app:tint="@color/LightCoral" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

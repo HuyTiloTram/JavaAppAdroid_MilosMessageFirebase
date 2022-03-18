@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "54073821151",
+    "project_id": "milos-e16d4",
+    "storage_bucket": "milos-e16d4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:54073821151:android:0767f766bc4049a649a66a",
+        "android_client_info": {
+          "package_name": "com.l19cntt1b.milos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "54073821151-mprqsmv0m3r5su1oh34khs1qvd2rqkp3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEPdI3LAFr--aXznKRw3xg17u_aMd-TpY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "54073821151-mprqsmv0m3r5su1oh34khs1qvd2rqkp3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
